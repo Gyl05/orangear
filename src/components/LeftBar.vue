@@ -1,15 +1,10 @@
 <script setup>
-
+    
 </script>
 
 <template>
     <div class="wrap">
         <div class="nav">
-            <div class="btn">
-                <div class="btn-item"></div>
-                <div class="btn-item"></div>
-                <div class="btn-item"></div>
-            </div>
             <div class="icon">
                 <div class="icon-img"><img src="../assets/1.jpeg" alt=""></div>
                 <div class="icon-con">
@@ -17,6 +12,18 @@
                     <h2>Valli.Dom</h2>
                 </div>
             </div>
+
+            <div class="btn">
+                <div class="btn-item">
+                    1
+                    <font-awesome-icon icon="HatWizard" />
+                </div>
+                <div class="btn-item">2</div>
+                <div class="btn-item">3</div>
+                <div class="btn-item">4</div>
+                <div class="btn-item">5</div>
+            </div>
+
             <div class="line"></div>
             <div class="title"></div>
 
@@ -53,8 +60,44 @@
 } */
 .btn{
     width: 60px;
-    height: 10px;
+    height: 400px;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: aqua;
+}
+
+.btn-item{
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.icon{
+    width: 250px;
+    height: 60px;
+    margin-left: 25px;
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.icon-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+}
+
+.icon-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 </style>
